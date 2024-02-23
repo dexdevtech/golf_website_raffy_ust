@@ -1,0 +1,60 @@
+.tournaments__container h2 {
+    font-size: 2.9rem;
+}
+
+.tournaments__container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.tournament__left img {
+    width: 48rem;
+}
+
+.gcash {
+    display: flex;
+    margin: 0.9rem 0;
+    justify-content: center;
+}
+
+.gcash img {
+    width: 8rem;
+}
+
+.gcash p {
+    font-size: 1.2rem;
+}
+
+.gcash .bold__text {
+    font-weight: bold;
+}
+
+.tournament__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tournament__right article{
+    border: 0.4rem var(--color-primary) solid;
+    padding: 1rem 4.2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: var(--color-bg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

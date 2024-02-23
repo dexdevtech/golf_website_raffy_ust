@@ -16,7 +16,7 @@
     --color-hover: #9d3d3d;
     --color-white: #f3f3f3;
     --color-black: #0e0e0e;
-    --color-bg: #fefefe;
+    --color-bg: #e4e4e4;
 
     --container-width-lg: 84%;
     --container-width-md: 90%;
@@ -77,6 +77,12 @@ section {
     padding: 2rem 0;
 }
 
+section h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -100,14 +106,11 @@ section {
     justify-content: center;
     font-family: 'ITC Franklin Gothic';
     font-size: 2.8rem;
-    font-weight: bold;
-    font-stretch: expanded;
-    text-transform: capitalize;
     letter-spacing: 0.1vmax;
     word-spacing: 0.2em;
     line-height: 1.3em;
     text-align: center;
-    color: var(--color-black);
+    color: var(--color-primary);
     padding: 0em;
     margin-left: -50px;
 }
@@ -311,6 +314,10 @@ footer p {
     font-size: 1rem;
     font-weight: bold;
     font-family: var(--font-primary);
+}
+
+footer h3 {
+    color: var(--color-primary);
 }
 
 .footer__container {

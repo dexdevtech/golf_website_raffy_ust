@@ -3,101 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ITC+Franklin+Gothic:wght@400&display=swap">
-    <link type="text/css" rel="stylesheet" href="style.css" />
 
-    <title>About us</title>
-    <style>
-    body {
-    margin: 0;
-    background-image: url(officersbg.png);
-}
-    </style>
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/officers.css">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <h1><a href="INDEX.html"><img class="logo" src="SPG.png" alt="SPGA Logo"> </a>San Pascual Golf Association</h1> 
-    <div class="navbars">
-        <nav>
-            <a href="INDEX.html"> HOME</a>
-            <a href="ABOUTUS.html">ABOUT US</a>
-            <a href="TOURNAMENTS.html">TOURNAMENTS</a>
-            <a href="OFFICERS.html">OFFICERS</a>
-         
-           
-  
-        </nav>
-    </div>
-    <p class="aboutus"> SPGA OFFICERS </p>
-    
-    <p class="president-jojo"> Jojo Dimaano </p>
-    <p class="president-jojo-1"><strong> PRESIDENT </strong></p>
-    <p class="president-jojo-2"><strong> BOARD OF DIRECTORS</strong></p>
-    
-    <div class="officers-container">
-       
-        <p> Charlie Magbuhat</p>
-        <p> Rusty Ramirez</p>
-        <p> Jetto Cruzat</p>
-        <p> Meo Garcia</p>
-        <p> Joey Torres</p>
-        <p> Levi Dimaunahan</p>
-        <p> Janice Daep</p>
+    <div class="logo__title">
+        <a href="index.html">
+            <img class="logo" src="images/logo1.png" alt="SPGA Logo">
+        </a>
 
+        <h1> San Pascual Golf Association</h1>
     </div>
 
-    <p class="Members-2"><strong> MEMBERS</strong></p>
+    <!-- NAV -->
+    <nav>
+        <a href="index.html"> HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="tournament.html">TOURNAMENTS</a>
+        <a href="officers.html">OFFICERS</a>  
+    </nav>
 
-    <div class="Members">
-        <p> Mario Amparo</p>
-        <p> Boy De Chavez</p>
-        <p> Amiel Atienza</p>
-        <p> Art Elizaga</p>
-        <p> Iris Landicho</p>
-        <p> Vic Marquez</p>
-        <p> Rodel Chavez</p>
-        <p> Mar Conchada</p>
-        <p> Albert Mismanos</p>
-        <p> Joseph Reyes</p>
-        <p> Jun Atienza</p>
-        <p> Cesar Salazar</p>
-        <p> Jojo Mandocdoc</p>
-        <p> Pedy Lualhati</p>
-        <p> Bernie Mercado</p>
-        <p> Enan Babasa</p>
-        <p> Roger Ramirez</p>
-        <p> Ronnie Guico</p>
-        <p> Manolo Buri</p>
-        <p> Archie Benitez</p>
-        <p> Estoy Mulingtapang</p>
-        <p> Joeben Cabales</p>
-        <p> Martin Bilder</p>
-        <p> Alex Garejo</p>
-        <p> Joesph Aquino</p>
-        <p> Nilo Cruzat</p>
-        <p> Bernie Noriega</p>
-        <p> Jaime Jayson Mendoza</p>
-        <p> Rudy Lualhati</p>
-        <p> Utoy Lualhati</p>
-        <p> Nonoy Lualhati</p>
-        <p> George Tan</p>
-        <p> Mar Contreras</p>
-        <p> Mike Lacsamana</p>
-        <p> Ariel Panganiban</p>
-    
+    <!-- BOARD MEMBERS -->
+    <section class="board__members">
+        <h2>SPGA OFFICERS</h2>
+        <div class="container board__container">
+            <div class="president">
+                <article>
+                    <p>Jojo Dimaano</p> 
+                </article>
+                <h3>President</h3>
+            </div>
 
-    </div>
-    
-    <footer class="footer">
-        <div class="social">
-            <a href="https://twitter.com/?lang=en" class="twitter">Twitter</a>
-            <a href="" class="facebook">Facebook</a>
-             <p><strong>Contact:</strong> 0917-506-7928</p>
+            <div class="boards">
+                <h3>Board of Directors</h3>
+                <div class="chair">
+                    <article>
+                        <p>Charlie Magbuhat</p>
+                    </article>
+                    <article>
+                        <p>Rusty Ramirez</p>
+                    </article>
+                    <article>
+                        <p>Jetto Cruzat</p>
+                    </article>
+                    <article>
+                        <p>Meo Garcia</p>
+                    </article>
+                    <article>
+                        <p>Joey Torres</p>
+                    </article>
+                    <article>
+                        <p>Levi Dimaunahan</p>
+                    </article>
+                    <article>
+                        <p>Janice Daep</p>
+                    </article>
+                </div>
+            </div>
         </div>
-        
-        <div class="powered">
-            <p><strong>Sponsored by:<img class="SP" src="DQBOYS.png"> &nbsp; &nbsp; Powered by:</strong> <img class="SP" src="COOKSIE.JPG"> </p>
+    </section>
+
+    <!-- MEMBERS -->
+    <section class="members">
+        <h2>MEMBERS</h2>
+        <div class="container members__container">
+            <div class="members__list">
+                <article>
+                    <p>Mario Amparo</p>
+                </article>
+                <article>
+                    <p>Boy De Chavez</p>
+                </article>
+                <article>
+                    <p>Amiel Atienza</p>
+                </article>
+                <article>
+                    <p>Art Elizaga</p>
+                </article>
+                <article>
+                    <p>Iris Landicho</p>
+                </article>
+                <article>
+                    <p>Vic Marquez</p>
+                </article>
+                <article>
+                    <p>Rodel Chavez</p>
+                </article>
+                <article>
+                    <p>Mar Conchada</p>
+                </article>
+                <article>
+                    <p>Albert Mismanos</p>
+                </article>
+                <article>
+                    <p>Joseph Reyes</p>
+                </article>
+                <article>
+                    <p>Jun Atienza</p>
+                </article>
+                <article>
+                    <p>Cesar Salazar</p>
+                </article>
+                <article>
+                    <p>Jojo Mandocdoc</p>
+                </article>
+                <article>
+                    <p>Pedy Lualhati</p>
+                </article>
+                <article>
+                    <p>Bernie Mercado</p>
+                </article>
+                <article>
+                    <p>Enan Babasa</p>
+                </article>
+                <article>
+                    <p>Roger Ramirez</p>
+                </article>
+                <article>
+                    <p>Ronnie Guico</p>
+                </article>
+                <article>
+                    <p>Manolo Buri</p>
+                </article>
+                <article>
+                    <p>Archie Benitez</p>
+                </article>
+                <article>
+                    <p>Estoy Mulingtapang</p>
+                </article>
+                <article>
+                    <p>Joeben Cabales</p>
+                </article>
+                <article>
+                    <p>Martin Bilder</p>
+                </article>
+                <article>
+                    <p>Alex Garejo</p>
+                </article>
+                <article>
+                    <p>Joesph Aquino</p>
+                </article>
+                <article>
+                    <p>Nilo Cruzat</p>
+                </article>
+                <article>
+                    <p>Bernie Noriega</p>
+                </article>
+                <article>
+                    <p>Jaime Jayson Mendoza</p>
+                </article>
+                <article>
+                    <p>Rudy Lualhati</p>
+                </article>
+                <article>
+                    <p>Utoy Lualhati</p>
+                </article>
+                <article>
+                    <p>Nonoy Lualhati</p>
+                </article>
+                <article>
+                    <p>George Tan</p>
+                </article>
+                <article>
+                    <p>Mar Contreras</p>
+                </article>
+                <article>
+                    <p>Mike Lacsamana</p>
+                </article>
+                <article>
+                    <p>Ariel Panganiban</p>
+                </article>
+            </div>   
+        </div>     
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <img src="images/logo1.png" alt="">
+                <h3>San Pascual Golfers Association</h3>
+            </div>
+            <div class="footer__right">
+                <div class="socials">
+                    <p>Contact Us</p>
+                    <ul>
+                        <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                        <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class="bi bi-telephone"></i></a></li>
+                    </ul>
+                </div>
+                <div class="partners">
+                    <article>
+                        <p>Sponsored By: </p>
+                        <img src="images/DQ_boys.png" alt="">
+                    </article>
+                    <article>
+                        <p class="slight__down">Powered By: </p>
+                        <img src="images/cooksie.jpg" alt="">
+                    </article>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

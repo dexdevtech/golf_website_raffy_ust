@@ -1,0 +1,84 @@
+/* BOARD MEMBERS */
+.board__members {
+    background-image: url(/images/officers_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+.board__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 3rem; 
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.board__container article {
+    border: 0.4rem var(--color-primary) solid;
+    padding: 1rem 4.2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: var(--color-bg);
+}
+
+.chair {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.president {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.president h3 {
+    font-size: 1.6rem;
+}
+
+.boards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MEMBERS */
+.members__container {
+    border: 0.4rem var(--color-primary) solid;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    background-color: var(--color-bg);
+}
+
+.members__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
