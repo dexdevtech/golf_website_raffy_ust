@@ -1,0 +1,505 @@
+/* PRELIMINARY CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: 'Abril Fatface';
+    --font-secondary: 'ITC Franklin Gothic';
+
+    --color-primary: #1e447c;
+    --color-secondary: #f00404;
+    --color-hover: #9d3d3d;
+    --color-white: #f3f3f3;
+    --color-black: #0e0e0e;
+    --color-bg: #fefefe;
+
+    --container-width-lg: 90%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 300ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-primary);
+    background: var(--color-white);
+    font-family: var(--font-primary);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    text-align: left;
+    color: var(--color-black);
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+/* LOGO TITLE */
+.logo__title {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8rem;
+    background-color: #1e447c;
+    color: var(--color-white);
+    border-bottom: 1rem solid #f00404; 
+    position: relative;
+}
+
+nav::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(235, 227, 227); 
+}
+
+nav a {
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 30px;
+    font-family: 'ITC Franklin Gothic', sans-serif;
+    font-size: 20px; 
+    transition: var(--transition);
+}
+
+nav a:hover {
+    filter: brightness(1.2);
+    color: var(--color-hover);
+}
+
+/* HERO */
+.hero__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    background-image: url(president’s.png);
+}
+
+.logo {
+    width: 180px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin: 0% 0;
+    justify-content: center;
+    font-family: 'ITC Franklin Gothic';
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-transform: capitalize;
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.2em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #060907;
+    padding: 0em;
+    margin-left: -50px;
+}
+
+
+
+.container {
+    align-items: center;
+    position: relative;
+    margin-bottom: -20px; 
+}
+
+.image-container {
+    position: relative;
+    width: 40%; 
+}
+
+.front-image,
+.back-image {
+    position: absolute;
+}
+
+
+.back-image {
+    width: 175%;
+    left: -20%;
+}
+
+.front-image {
+    width: 220%;
+    left: -25%;
+    margin-top: -120px;
+    z-index: -1;
+}
+
+.alpha {
+    font-family: 'Abril Fatface'; 
+    margin-bottom: 0;
+    margin-top: 130px; 
+    margin-left: 560px;
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+}
+
+.bravo {
+    font-family: 'Poppins'; 
+    margin-top: 10px;
+    margin-left: 560px;
+    font-size: 17px;
+    text-align: left;
+    font-weight: 500; 
+}
+
+.charlie {
+    font-family: 'Poppins'; 
+    margin-top: 0%;
+    margin-left: 35%;
+    font-size: 140%;
+    text-align: left;
+    font-weight: 500; 
+    display: flex;
+    align-items: center;
+}
+
+
+.charlie1 {
+    max-width: 10%;
+}
+
+.Delta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: center;
+}
+
+.Hospital {
+    color: #1e447c;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins';
+    margin-top: -550px;
+    margin-left: 850px;
+    margin-right: 0;
+}
+
+.Echo,
+.Foxtrot,
+.Gillispie,
+.India {
+    width: 300px;
+    margin-top: -40px;
+    margin-right: -450px;
+    margin-left: 400px;
+}
+
+
+
+.footer {
+    background-image: url('footer.png');
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+   
+}
+
+.social {
+    transform: translateX(-25%);
+   
+}
+
+.social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.twitter {
+    background-color: #3b5998;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+
+.powered {
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-end; 
+    color: #060907;
+    transform: translateY(30px); 
+    margin-right: 240px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    color: #0d264c;
+
+}
+
+
+.SP {
+    width: 70px;
+    transform: translateY(25%);
+  
+     
+}
+.contact {
+    font-family: 'Poppins';
+    transform: translateX(-25%);
+}
+
+
+.aboutus {
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
+    transform: translateX(-29%);
+   
+    
+   
+}
+
+.site {
+    width: 650px;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 0;
+    transform: translate(92%,-100%); 
+    margin-bottom: -25%;
+}
+
+.aboutuss {
+    font-size: 21px;
+    text-align: left;
+    margin-left: 150px;
+    transform: translateY(-55px);
+}
+
+.site, .aboutuss {
+    display: inline-block;
+    align-items: center;
+}
+
+.officers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    width: 50%;
+    margin-left: auto; 
+    margin-right: 5%; 
+}
+
+.officers-container p {
+    background-color: #dfd8d8;
+    border: 5px solid #1e447c; 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    transform: translateY(-250%);
+    color: #090707;    
+   
+}
+
+.president-jojo {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e1e4e9;
+    text-align: center;
+    font-size: 30px;
+    width: 30%;
+    transform: translateY(135px);
+    margin-left: 6.5%;
+    color: #110e0e;
+    border: 5px solid #1e447c
+   
+}
+
+.president-jojo-1 {
+    transform: translateY(125px);
+    margin-left: 18.5%;
+    font-size: 25px;
+    font-family: 'Poppins';
+    
+   
+ 
+}
+
+.president-jojo-2 {
+    position: absolute;
+    top: 58%;
+    right: 12.5%;
+    transform: translateX(-50%);
+    font-family: 'Poppins';
+    font-size: 25px;
+}
+
+.Members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    border-width: -50px;
+    border: 10px solid #1e447c; 
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 75px; 
+    font-size: 30px;
+    color: #0b0a0a;
+}
+
+.Members p {
+    line-height: 0; 
+}
+.Members-2 {
+    text-align: center; 
+    font-size: 30px;
+    margin-top: -2%;
+}
+
+.kickoff {
+    width: 50%;
+    transform: translateY(168%);
+    margin-left: -3.5%;
+    margin-bottom: 25%;
+    margin-top: -50%;
+}
+
+.AAP-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px; 
+        width: 50%;
+        margin-left: auto;
+        margin-right: 5%; 
+        margin-bottom:-10%;
+    
+}
+
+.AAP-container p {
+ 
+    border: 5px solid #1e447c; 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -40%;
+   margin-bottom: 40%;
+   transform: translateY(-10%);
+    color: #090707;    
+ 
+   
+}
+
+.GCASH {
+
+    width: 15%;
+    transform: translate(45%,-183.5%);
+    margin-top: -50%;
+    margin-bottom: -13%;
+
+}
+
+.payment-container {
+    font-size: 23px;
+    margin-left: 18%;
+   transform: translateY(-200%);
+   margin-bottom: -9%;
+}
+
+
+
