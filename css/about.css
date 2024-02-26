@@ -22,6 +22,15 @@
     text-align: justify;
 }
 
-
+/* =========== MEDIA QUERIES =========== */
+@media screen and (max-width: 660px){
+    .about__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 3rem; 
+        align-items: center;
+        padding: 1rem 0;
+    }
+}
 
 

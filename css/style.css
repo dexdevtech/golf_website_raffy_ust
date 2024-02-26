@@ -398,6 +398,13 @@ footer h3 {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.4rem;
     }
+
+    /*=== EVENTS ===*/
+    .events__container .events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+    }
 }
 
 @media screen and (max-width: 660px){ 
@@ -421,6 +428,20 @@ footer h3 {
         font-size: 1.1rem;
     }
 
+    /*=== LOGO TITLE ===*/
+    .logo__title {
+        gap: 3rem;
+    }
+
+    .logo {
+        width: 8.25rem;
+    }
+
+    .logo__title h1 {
+        font-size: 1.8rem;
+    }
+    
+
     /*=== NAV ===*/
     nav {
         padding: 1.8rem;
@@ -431,36 +452,16 @@ footer h3 {
         font-size: 12px; 
     }
 
-    nav a:hover {
-        filter: brightness(1.2);
-        color: var(--color-hover);
-    }
+    /*=== PRESIDENT ===*/
+    .president__photo img {
+        position: absolute;
+        bottom: -0.1rem;
+        left: -0.1rem;
+        width: 100%;
+    } 
 
     /*=== FOOTER ===*/
     footer {
-        background-image: url('/images/footer.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        color: var(--color-black);
-        padding: 1.2rem;
-        text-align: center; 
-
-        display: flex;
-        justify-content: space-between;
-    }
-
-    footer p {
-        font-size: 1rem;
-        font-weight: bold;
-        font-family: var(--font-primary);
-    }
-
-    footer h3 {
-        color: var(--color-primary);
-    }
-
-    .footer__container {
         display: flex;
         justify-content: space-between;
     }
@@ -469,11 +470,121 @@ footer h3 {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 0.3rem;
+        gap: 0rem;
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: var(--font-primary);
     }
 
     .footer__logo img{
-        width: 11.25rem;
+        width: 8.25rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    /*=== LOGO TITLE ===*/
+    .logo__title {
+        gap: 3rem;
+    }
+
+    .logo {
+        width: 6.25rem;
+    }
+
+    .logo__title h1 {
+        font-size: 1.0rem;
+    }
+
+    /*=== NAV ===*/
+    nav {
+        padding: 1.2rem 0rem;
+    }
+
+    nav a {
+        padding: 1rem 0;
+        font-size: 10px; 
+    }
+
+    /*=== HERO ===*/
+    .hero__container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+
+    /*=== PRESIDENT ===*/
+    .president__photo {
+        border: 0.5rem var(--color-secondary) solid;
+        margin: 1.6rem;
+        position: relative;
+        min-height: 19rem;;
+    }
+
+    .president__photo img {
+        position: absolute;
+        bottom: -0.1rem;
+        left: 6rem;
+        width: 52%;
+    } 
+
+    .president__message {
+        margin-top: 0rem;
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 0.8rem;
+    }
+
+    .president_quote p {
+        font-family: 'ITC Franklin Gothic', sans-serif;
+        font-size: 1rem;
+    }
+
+    .bold__text {
+        font-weight: bold;
+    }
+
+    .president__details {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .president__details img {
+        width: 5rem;
+    }
+
+    /*=== EVENTS ===*/
+    .events__container .events {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+
+    .explore {
+        font-size: 1.4rem;
+    }
+
+    /*=== FOOTER ===*/
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer h3 {
+        color: var(--color-primary);
+        font-size: 1.2rem;
+    }
+
+    .footer__logo img{
+        width: 8.25rem;
     }
 
     .social {
@@ -482,12 +593,7 @@ footer h3 {
     }
 
     .social a {
-        display: inline-block;
-        margin-right: 10px;
-        color: white;
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 5px;
+        margin-top: 0.6rem;
     }
 
     .footer__right {
@@ -495,45 +601,24 @@ footer h3 {
         flex-direction: column;
         gap: 0.5rem;
         justify-content: center;
-    }
-
-    .socials ul {
-        display: flex;
-        justify-content: space-around;
-        gap: 0.4rem;
-        margin: 1rem;
-    }
-
-    .socials ul li {
-        background-color: var(--color-primary);
-        padding: 0.4rem 0.5rem 0.3rem 0.5rem;
-        border-radius: 0.5rem;
-        transition: var(--transition);
-    }
-
-    .socials ul li:hover {
-        background-color: var(--color-secondary);
+        margin-top: 1.4rem;
     }
 
     .partners {
         display: flex;
         gap: 3rem;
+        margin: 0 auto;
     }
 
     .partners img{
-        width: 3rem;
+        width: 2rem;
     }
 
     .partners .slight__down {
         margin-bottom: 0.5rem;
     }
 
-
 }
-
-
-
-
 
 
 
